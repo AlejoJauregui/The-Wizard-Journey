@@ -67,7 +67,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1362267029
-  m_SortingLayer: 3
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: -7852470446585872443, guid: c916f1807c26a1644831ac110e7f9c00,
     type: 3}
@@ -111,12 +111,12 @@ GameObject:
   - component: {fileID: 872228051470827809}
   - component: {fileID: 872228051470827870}
   - component: {fileID: 872228051470827871}
-  - component: {fileID: 872228051470827808}
   - component: {fileID: 872228051470827811}
+  - component: {fileID: 4629121519835880076}
   - component: {fileID: 872228051470827810}
   m_Layer: 0
   m_Name: wizard_0
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -171,8 +171,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1362267029
-  m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingLayer: -2
+  m_SortingOrder: 10
   m_Sprite: {fileID: 3422849895820167655, guid: c5f1c6807cb734144bafa60719880505,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -211,19 +211,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7165661, y: 2.5981483}
   m_EdgeRadius: 0
---- !u!114 &872228051470827808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 872228051470827868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c469f63b84bec904e879234871b81aba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 160
 --- !u!95 &872228051470827811
 Animator:
   serializedVersion: 3
@@ -243,6 +230,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4629121519835880076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872228051470827868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c469f63b84bec904e879234871b81aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 160
 --- !u!50 &872228051470827810
 Rigidbody2D:
   serializedVersion: 4

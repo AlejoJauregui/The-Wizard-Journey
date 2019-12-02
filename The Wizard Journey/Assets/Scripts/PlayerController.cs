@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     public float speed;
 
     bool walking = false;
-    Vector2 lastMovement = Vector2.zero;
+    public Vector2 lastMovement = Vector2.zero;
     const string horizontal = "Horizontal";
     const string vertical = "Vertical";
     const string lastHorizontal = "LastHorizontal";
@@ -15,17 +15,31 @@ public class PlayerController : MonoBehaviour
     const string walkingState = "Walking";
     Animator animator;
     Rigidbody2D playerRigidBody;
+
+    public static bool playerCreated; 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
         playerRigidBody = GetComponent<Rigidbody2D>();
+        PlayerCreated();
     }
 
     // Update is called once per frame
     void Update()
     {  
         CheckButtonMovements();
+    }
+
+    void PlayerCreated()
+    {
+        if(!playerCreated)
+        {
+            playerCreated = true;
+            DontDestroyOnLoad(this.transform.gameObject);
+        }
+        else
+            Destroy(gameObject);
     }
 
     void CheckButtonMovements()

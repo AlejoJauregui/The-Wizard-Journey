@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Village.unity
+    guid: 3cea9648d65da7441b3634f92db5e5a5
+  - enabled: 1
+    path: Assets/Scenes/Hell.unity
+    guid: 568fc713fcf3c014380c59abf9001a1c
   m_configObjects: {}
