@@ -29640,6 +29640,11 @@ PrefabInstance:
       propertyPath: levelNameToTransport
       value: Hell
       objectReference: {fileID: 0}
+    - target: {fileID: 8304632926743670622, guid: aabbaa93561c4ad4fba7da08e006e6ff,
+        type: 3}
+      propertyPath: goToPlaceName
+      value: HellEntrance
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aabbaa93561c4ad4fba7da08e006e6ff, type: 3}
 --- !u!1001 &3473172499048458373
@@ -29723,6 +29728,11 @@ PrefabInstance:
         type: 3}
       propertyPath: facingDirection.x
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127836285166218095, guid: 3ce9756e84666f049bd85961ddb0ffb5,
+        type: 3}
+      propertyPath: placeName
+      value: VillageEntrance
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ce9756e84666f049bd85961ddb0ffb5, type: 3}

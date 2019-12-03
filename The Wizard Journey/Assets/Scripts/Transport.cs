@@ -6,9 +6,13 @@ public class Transport : MonoBehaviour
 {
     [SerializeField]
     string levelNameToTransport; 
+    public string goToPlaceName; 
     private void OnTriggerEnter2D(Collider2D objToTransport) 
     {
         if(objToTransport.gameObject.tag.Equals("Player"))
-            SceneManager.LoadScene(levelNameToTransport);     
+        {
+            FindObjectOfType<PlayerController>().nextPlaceName = goToPlaceName;
+            SceneManager.LoadScene(levelNameToTransport);   
+        }  
     }
 }

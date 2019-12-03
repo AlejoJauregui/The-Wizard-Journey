@@ -28697,6 +28697,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: TransportPortal
       objectReference: {fileID: 0}
+    - target: {fileID: 2787685651791379420, guid: aabbaa93561c4ad4fba7da08e006e6ff,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000,
+        type: 0}
     - target: {fileID: 7195279706434882351, guid: aabbaa93561c4ad4fba7da08e006e6ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28756,6 +28762,11 @@ PrefabInstance:
         type: 3}
       propertyPath: levelNameToTransport
       value: Village
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304632926743670622, guid: aabbaa93561c4ad4fba7da08e006e6ff,
+        type: 3}
+      propertyPath: goToPlaceName
+      value: VillageEntrance
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aabbaa93561c4ad4fba7da08e006e6ff, type: 3}

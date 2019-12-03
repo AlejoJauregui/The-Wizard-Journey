@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
     Animator animator;
     Rigidbody2D playerRigidBody;
 
+    public string nextPlaceName; 
+
     public static bool playerCreated; 
     // Start is called before the first frame update
     void Start()

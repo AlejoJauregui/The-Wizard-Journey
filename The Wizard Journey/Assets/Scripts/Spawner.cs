@@ -13,6 +13,8 @@ public class Spawner : MonoBehaviour
 
     public Vector2 facingDirection = Vector2.zero;
 
+    public string placeName;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,11 @@ public class Spawner : MonoBehaviour
         theCamera = FindObjectOfType<CameraFollow>();
        /* player.gameObject.GetComponent<Renderer>().sortingOrder.Equals(1);
         Debug.Log("layer: " + player.gameObject.GetComponent<Renderer>().sortingOrder);*/
+
+        if(!player.nextPlaceName.Equals(placeName))
+        {
+            return;
+        }
 
         player.transform.position = new Vector3 (playerPosition.position.x, playerPosition.position.y, playerPosition.position.z);
         theCamera.transform.position = new Vector3(camPosition.position.x, camPosition.position.y, camPosition.position.z);
