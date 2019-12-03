@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3572686530879486372}
   - component: {fileID: 3572686530879486373}
   - component: {fileID: 3572686530879486370}
+  - component: {fileID: 8772392773989436358}
   m_Layer: 0
   m_Name: Mage
   m_TagString: Untagged
@@ -68,7 +69,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1362267029
-  m_SortingLayer: 3
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7942859758497058819, guid: 3c2d943e73c7aab4ba463c16e87fc725,
     type: 3}
@@ -127,3 +128,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.8125, y: 3.34375}
   m_EdgeRadius: 0
+--- !u!50 &8772392773989436358
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3572686530879486371}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
