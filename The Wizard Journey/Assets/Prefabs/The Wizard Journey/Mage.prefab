@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 3572686530879486373}
   - component: {fileID: 3572686530879486370}
   - component: {fileID: 8772392773989436358}
+  - component: {fileID: 2992522931432576948}
   m_Layer: 0
   m_Name: Mage
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3572686530879486371}
-  m_LocalRotation: {x: -0, y: 0.998642, z: -0, w: -0.05209784}
+  m_LocalRotation: {x: 0, y: 0.99864185, z: -0, w: -0.052100472}
   m_LocalPosition: {x: 14.54, y: 5.05, z: -1.61}
   m_LocalScale: {x: 0.58347154, y: 0.58347154, z: 0.58347154}
   m_Children: []
@@ -68,8 +69,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1362267029
-  m_SortingLayer: -2
+  m_SortingLayerID: -175319723
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7942859758497058819, guid: 3c2d943e73c7aab4ba463c16e87fc725,
     type: 3}
@@ -115,7 +116,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0000006556511, y: -0.050972283}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -126,7 +127,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.8125, y: 3.34375}
+  m_Size: {x: 2.3918362, y: 3.0379176}
   m_EdgeRadius: 0
 --- !u!50 &8772392773989436358
 Rigidbody2D:
@@ -149,3 +150,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2992522931432576948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3572686530879486371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b17eb55f0056bd488ea9739b86daccd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpeed: 1
+  timeBetweenSteps: 2
+  timeToMakeStep: 1.5
+  dicrectionToMakeStep: {x: 0, y: 0}
