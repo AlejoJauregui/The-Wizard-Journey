@@ -97,8 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2eb7eb44682d12458669d1516d07aed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetToFollow: {fileID: 872228051470827868, guid: 9fe9cc0bbda057c478b0a9bb2d5a4876,
-    type: 3}
+  targetToFollow: {fileID: 0}
   targetPosition: {x: 0, y: 0, z: 0}
   cameraSpeed: 4
 --- !u!114 &-6770173290608251389
