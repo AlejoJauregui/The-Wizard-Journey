@@ -13,6 +13,8 @@ public class HealthManager : MonoBehaviour
     public float flashLength;
     private float flashCounter;
 
+    public int expWhenDefeted; 
+
     private SpriteRenderer characterRenderer;
 
     // Start is called before the first frame update
@@ -32,7 +34,13 @@ public class HealthManager : MonoBehaviour
     void areYouAlive()
     {
         if(currentHealth <= 0)
+        {
             gameObject.SetActive(false);
+            if(gameObject.tag.Equals("Enemy"))
+            {
+                GameObject.Find("Wizard").GetComponent<CharacterStats>().AddExperience(expWhenDefeted);
+            }
+        }
     }
     public void CalculateDamage(int damage)
     {
