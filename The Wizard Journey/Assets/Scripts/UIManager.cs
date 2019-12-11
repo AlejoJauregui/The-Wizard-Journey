@@ -8,10 +8,8 @@ public class UIManager : MonoBehaviour
 {
     public Slider playerHealthbar;
     public Text playerHealthText;
-    public Text playerLevelText;
 
     public HealthManager playerHealthManager;
-    public CharacterStats characterStatsManager;
 
     public static bool uiManagerCreated;
     
@@ -24,7 +22,6 @@ public class UIManager : MonoBehaviour
     void Update()
     {
         UpdateLife();
-        UpdateLevel();
     }
     void UpdateLife()
     {
@@ -37,12 +34,6 @@ public class UIManager : MonoBehaviour
         constructHealthText.Append("/");
         constructHealthText.Append(playerHealthManager.maxHealth);
         playerHealthText.text = constructHealthText.ToString();
-    }
-    void UpdateLevel()
-    {
-        StringBuilder constructLevelText = new StringBuilder("Player Level: ");
-        constructLevelText.Append(characterStatsManager.currentLevel);
-        playerLevelText.text = constructLevelText.ToString();
     }
     void IsUIManagerCreated()
     {
