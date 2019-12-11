@@ -6,15 +6,23 @@ public class DontDestroyOnLoad : MonoBehaviour
 {
     static bool cameraCreated;
     // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         IsCameraCreated();
         checkPlayerLoad();
+        CheckUIManagerCreator();
     }
 
     void checkPlayerLoad()
     {
         if(!PlayerController.playerCreated)
+            DontDestroyOnLoad(this.transform.gameObject);
+        else
+            Destroy(gameObject);
+    }
+    void CheckUIManagerCreator()
+    {
+        if(!UIManager.uiManagerCreated)
             DontDestroyOnLoad(this.transform.gameObject);
         else
             Destroy(gameObject);
