@@ -115,6 +115,7 @@ GameObject:
   - component: {fileID: 4629121519835880076}
   - component: {fileID: 872228051470827810}
   - component: {fileID: 96188740}
+  - component: {fileID: 96188741}
   m_Layer: 0
   m_Name: wizard_0
   m_TagString: Player
@@ -284,6 +285,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 0
+  flashActive: 0
+  flashLength: 0
+  expWhenDefeted: 0
+--- !u!114 &96188741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872228051470827868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 925686cfe346b724f9f2137c89efa83a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLevel: 0
+  currentExp: 0
+  expToLevelUp: 000000000a000000140000003200000064000000c8000000f4010000e8030000d007000088130000
 --- !u!1 &1751228449011629604
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,7 +409,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2522882366613822360}
   m_LocalRotation: {x: -0, y: -0, z: -0.073555656, w: -0.99729115}
-  m_LocalPosition: {x: -0.0784, y: 0.0632, z: 0}
+  m_LocalPosition: {x: -0.09, y: 0.05, z: 0}
   m_LocalScale: {x: 1.3643, y: 1.3643, z: 1.3643}
   m_Children: []
   m_Father: {fileID: 4730179850554855236}
@@ -456,6 +475,7 @@ GameObject:
   - component: {fileID: 8646643412053436203}
   - component: {fileID: 6202629486209504544}
   - component: {fileID: 188413082078206962}
+  - component: {fileID: 2136500858}
   m_Layer: 0
   m_Name: Swing_Zone
   m_TagString: Untagged
@@ -471,7 +491,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4539533229465150814}
   m_LocalRotation: {x: -0, y: -0, z: -0.9986332, w: 0.052266154}
-  m_LocalPosition: {x: 0.708, y: 0.131, z: 0}
+  m_LocalPosition: {x: 0.691, y: 0.114, z: 0}
   m_LocalScale: {x: 1.6731279, y: 1.6731279, z: 1.6731277}
   m_Children:
   - {fileID: 7709668152432103437}
@@ -538,7 +558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f868ac3dc832e9741950dbe867012d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponDamage: 15
+  weaponDamage: 10
   hurtAnimation: {fileID: 124854575367846519, guid: 965d12ffb4db10a4ea16f3a108f83cfa,
     type: 3}
   hitPoint: {fileID: 8507980700146655897}
@@ -575,6 +595,37 @@ PolygonCollider2D:
       - {x: 0.09375, y: -0.203125}
       - {x: 0.1875, y: -0.078125}
       - {x: 0.19649129, y: 0.083905034}
+--- !u!60 &2136500858
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4539533229465150814}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.375, y: 0.40625}
+    newSize: {x: 0.375, y: 0.40625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 0.203125}
+      - {x: -0.1875, y: 0.140625}
+      - {x: -0.1875, y: -0.203125}
+      - {x: 0.09375, y: -0.203125}
+      - {x: 0.1875, y: -0.078125}
+      - {x: 0.1875, y: 0.203125}
 --- !u!1 &5798482678279441247
 GameObject:
   m_ObjectHideFlags: 0
