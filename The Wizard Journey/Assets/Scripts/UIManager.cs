@@ -13,12 +13,6 @@ public class UIManager : MonoBehaviour
     public HealthManager playerHealthManager;
     public CharacterStats characterStatsManager;
 
-    public Slider playerExpBar;
-    public Text playerExpText;
-
-    public int currentPlayerExp;
-    
-
     public static bool uiManagerCreated;
     
     void Start()
@@ -31,7 +25,6 @@ public class UIManager : MonoBehaviour
     {
         UpdateLife();
         UpdateLevel();
-        UpdatePlayerExp();
     }
     void UpdateLife()
     {
@@ -50,18 +43,6 @@ public class UIManager : MonoBehaviour
         StringBuilder constructLevelText = new StringBuilder("Player Level: ");
         constructLevelText.Append(characterStatsManager.currentLevel);
         playerLevelText.text = constructLevelText.ToString();
-    }
-    void UpdatePlayerExp()
-    {
-        currentPlayerExp = characterStatsManager.currentExp;
-        playerExpBar.maxValue = characterStatsManager.expToLevelUp[currentPlayerExp];
-        playerExpBar.value = currentPlayerExp;
-
-        StringBuilder constructExpText = new StringBuilder("XP: ");
-        constructExpText.Append(currentPlayerExp);
-        constructExpText.Append(characterStatsManager.expToLevelUp.Length);
-        playerExpText.text = constructExpText.ToString();
-
     }
     void IsUIManagerCreated()
     {
