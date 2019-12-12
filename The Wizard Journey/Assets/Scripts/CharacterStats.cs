@@ -8,7 +8,7 @@ public class CharacterStats : MonoBehaviour
     public int currentExp = 0;
     public int [] expToLevelUp;
 
-    public int [] hpLevels, strengthLevels, defendsLevels;
+    public int [] hpLevels, strengthLevels, defenseLevels;
 
     private HealthManager healthManager;
 
