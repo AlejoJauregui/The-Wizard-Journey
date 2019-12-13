@@ -10,6 +10,7 @@ public class CharacterStats : MonoBehaviour
 
     public int [] hpLevels, strengthLevels, defenseLevels;
 
+
     private HealthManager healthManager;
 
     // Start is called before the first frame update
@@ -39,4 +40,5 @@ public class CharacterStats : MonoBehaviour
     {
         currentExp += experience;
     }
+
 }

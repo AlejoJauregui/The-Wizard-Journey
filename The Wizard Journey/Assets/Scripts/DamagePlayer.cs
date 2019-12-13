@@ -15,11 +15,17 @@ public class DamagePlayer : MonoBehaviour
     {
         if(objCollision.gameObject.tag.Equals("Player"))
         {
+            CharacterStats stats = objCollision.gameObject.GetComponent<CharacterStats>();
+            int totalDamage = damage - stats.defenseLevels[stats.currentLevel];
+
+            if(totalDamage <= 0)
+                totalDamage = 1;
+
             //Collision between enemy and player
-            objCollision.gameObject.GetComponent<HealthManager>().CalculateDamage(damage);
+            objCollision.gameObject.GetComponent<HealthManager>().CalculateDamage(totalDamage);
             
             var clone = (GameObject) Instantiate(damageNumber, objCollision.gameObject.transform.position,Quaternion.Euler(Vector3.zero));
-            clone.GetComponent<DamageNumber>().damagePoints = damage;
+            clone.GetComponent<DamageNumber>().damagePoints = totalDamage;
         }   
     }
 
