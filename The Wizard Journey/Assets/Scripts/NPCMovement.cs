@@ -25,6 +25,8 @@ public class NPCMovement : MonoBehaviour
         new Vector2(0,-1)
     };
 
+    public BoxCollider2D movementZone;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +44,16 @@ public class NPCMovement : MonoBehaviour
     {
         if(isWalking)
         {
+            if(movementZone != null)
+            {
+                if(this.transform.position.x < movementZone.bounds.min.x || this.transform.position.x > movementZone.bounds.max.x || 
+                this.transform.position.y < movementZone.bounds.min.y || this.transform.position.y > movementZone.bounds.max.y)
+                {
+                    StopWalking();
+                }
+            }
+
+
             npcRigidBody.velocity = walkingDirection[currentDirection] * speed;
             walkCounter -= Time.deltaTime;
             if(walkCounter < 0)
