@@ -44,7 +44,7 @@ public class UIManager : MonoBehaviour
     }
     void UpdateLevel()
     {
-        StringBuilder constructLevelText = new StringBuilder("Player Level: ");
+        StringBuilder constructLevelText = new StringBuilder("");
         constructLevelText.Append(characterStatsManager.currentLevel);
         playerLevelText.text = constructLevelText.ToString();
     }
