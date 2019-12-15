@@ -29,13 +29,13 @@ public class NPCDialog : MonoBehaviour
     {
         if(playerIsInTheZone)
         {
-            if(Input.GetKeyDown("joystick button 1") || Input.GetMouseButtonDown(2))
+            if(Input.GetKeyDown("joystick button 1") || Input.GetMouseButtonDown(1))
             {
                 manager.dialogActive = true;
                 manager.dialogBox.SetActive(true);
                 if(manager.dialogActive)
                 {
-                    if(Input.GetKeyDown("joystick button 1") || Input.GetMouseButtonDown(2))
+                    if(Input.GetKeyDown("joystick button 1") || Input.GetMouseButtonDown(1))
                     {
                         manager.ShowDialog(dialogs);
                     }

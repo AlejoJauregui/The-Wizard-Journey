@@ -70,9 +70,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b49f116b27694f749ad34eb3cbe2cb0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialog: "Aaron, soy el Gran Esp\xEDritu, te guiar\xE9 para que puedas rescatar a
-    tu hija del esp\xEDritu oscuro. Una parte de mi siempre te acompa\xF1ar\xE1 y
-    te dar\xE1 la fuerza para combatirlo a el y a sus esbirros."
+  dialogs:
+  - "Hola Aaron. Soy el Gran Esp\uFCE9\xEDritu."
+  - "Te ayudar\xE9 rescatar a tu hija de las malvadas manos del Oscuro Esp\uFCE9\xEDritu."
+  - "Una parte de mi viajar\xE1 contigo y te dar\xE1 fuerza para destru\uFCA0a los
+    esbirros de ese ser. "
+  - 
   playerIsInTheZone: 0
 --- !u!1 &3791460114101714073
 GameObject:

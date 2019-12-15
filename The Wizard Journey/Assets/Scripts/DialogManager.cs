@@ -22,9 +22,7 @@ public class DialogManager : MonoBehaviour
     {
         if(currentDialogLine >= dialogLines.Length)
         {
-            Debug.Log("Cumplo");
-
-            if(Input.GetKeyDown("joystick button 2") || Input.GetMouseButtonDown(1))
+            if(Input.GetKeyDown("joystick button 1") || Input.GetMouseButtonDown(1))
             {
                 dialogActive = false;
                 dialogBox.SetActive(false);
