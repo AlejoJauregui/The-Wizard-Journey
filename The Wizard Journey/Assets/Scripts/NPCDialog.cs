@@ -11,7 +11,8 @@ public class NPCDialog : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        manager = FindObjectOfType<DialogManager>();    
+        manager = FindObjectOfType<DialogManager>();   
+        playerIsInTheZone = false; 
     }
 
     // Update is called once per frame
@@ -24,6 +25,11 @@ public class NPCDialog : MonoBehaviour
     {
         if(npcCollider.gameObject.tag.Equals("Player"))
             playerIsInTheZone = true; 
+    }
+    private void OnTriggerExit2D(Collider2D npcCollider) 
+    {
+            if(!npcCollider.gameObject.tag.Equals("Player"))
+            playerIsInTheZone = false;       
     }
     void TalkWithNPC()
     {
@@ -38,6 +44,10 @@ public class NPCDialog : MonoBehaviour
                     if(Input.GetKeyDown("joystick button 1") || Input.GetMouseButtonDown(1))
                     {
                         manager.ShowDialog(dialogs);
+                        if(gameObject.GetComponentInParent<NPCMovement>() != null)
+                        {
+                            gameObject.GetComponentInParent<NPCMovement>().isTalking = true;
+                        }
                     }
                         
                 }
@@ -45,7 +55,7 @@ public class NPCDialog : MonoBehaviour
         }  
         if(manager.dialogActive)
         {
-            manager.checkInputContinueDialog();  
+            manager.checkInputContinueDialog(); 
         }
     }
 }

@@ -7,7 +7,7 @@ public class NPCMovement : MonoBehaviour
     [SerializeField]
     float speed;
     Rigidbody2D npcRigidBody; 
-    public bool isWalking;
+    public bool isWalking, isTalking;
 
     public float walkTime;
     private float walkCounter;
@@ -16,6 +16,8 @@ public class NPCMovement : MonoBehaviour
     float waitCounter; 
 
     int currentDirection;
+
+    DialogManager manager;
 
     private Vector2 [] walkingDirection =
     {
@@ -30,6 +32,7 @@ public class NPCMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        manager = FindObjectOfType<DialogManager>();
         npcRigidBody = GetComponent<Rigidbody2D>();
         waitCounter = waitTime;
         walkCounter = walkTime;
@@ -42,6 +45,15 @@ public class NPCMovement : MonoBehaviour
     }
     void NPCIsWalking()
     {
+        if(!manager.dialogActive)
+        {
+            isTalking = false;
+        }
+        if(isTalking)
+        {
+            StopWalking();
+            return;
+        }
         if(isWalking)
         {
             if(movementZone != null)

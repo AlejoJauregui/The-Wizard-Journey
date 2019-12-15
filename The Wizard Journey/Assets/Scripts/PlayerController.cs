@@ -24,6 +24,8 @@ public class PlayerController : MonoBehaviour
     public float attackTime;
     float attackTimeCounter;
 
+    public bool playerIsTalking; 
+
     public static bool playerCreated; 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +33,7 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         playerRigidBody = GetComponent<Rigidbody2D>();
         PlayerCreated();
+        playerIsTalking = false;
     }
 
     // Update is called once per frame
@@ -56,6 +59,11 @@ public class PlayerController : MonoBehaviour
         //Horizontal movement
         walking = false;
 
+        if(playerIsTalking)
+        {
+            playerRigidBody.velocity = Vector2.zero;
+            return;
+        }
         if(Input.GetMouseButtonDown(0)||Input.GetKeyDown("joystick button 0"))
         {
             attack = true;

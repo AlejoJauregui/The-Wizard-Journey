@@ -88,7 +88,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -28.789978, y: 17.26}
-  m_SizeDelta: {x: 972.41, y: 36.3}
+  m_SizeDelta: {x: 543.1, y: 36.3}
   m_Pivot: {x: 1, y: 0}
 --- !u!222 &4568965633874741666
 CanvasRenderer:
@@ -132,8 +132,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Pulsa para continuar: \"B\" en el control de Xbox o el bot\xF3n derecho
-    del mouse. Para terminar el dialogo pulsa \"X\" en el control de Xbox o el bot\xF3n
-    de scroll en el mouse."
+    del mouse. "
 --- !u!1 &4568965634026238364
 GameObject:
   m_ObjectHideFlags: 0
