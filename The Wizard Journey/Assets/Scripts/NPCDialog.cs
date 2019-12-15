@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NPCDialog : MonoBehaviour
 {
-    public string dialog;
+    public string [] dialogs;
     private DialogManager manager;
     public bool playerIsInTheZone;
 
@@ -17,14 +17,13 @@ public class NPCDialog : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      TalkWithNPC();
+        TalkWithNPC();
     }
 
     private void OnTriggerEnter2D(Collider2D npcCollider) 
     {
         if(npcCollider.gameObject.tag.Equals("Player"))
             playerIsInTheZone = true; 
-
     }
     void TalkWithNPC()
     {
@@ -34,13 +33,19 @@ public class NPCDialog : MonoBehaviour
             {
                 manager.dialogActive = true;
                 manager.dialogBox.SetActive(true);
-                manager.ShowDialog(dialog);
+                if(manager.dialogActive)
+                {
+                    if(Input.GetKeyDown("joystick button 1") || Input.GetMouseButtonDown(2))
+                    {
+                        manager.ShowDialog(dialogs);
+                    }
+                        
+                }
             }
         }  
         if(manager.dialogActive)
         {
             manager.checkInputContinueDialog();  
-            playerIsInTheZone = false;  
         }
     }
 }

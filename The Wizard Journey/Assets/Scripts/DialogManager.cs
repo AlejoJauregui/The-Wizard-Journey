@@ -9,17 +9,33 @@ public class DialogManager : MonoBehaviour
     public Text dialogText;
     public bool dialogActive; 
 
+    string [] dialogLines;
+    public int currentDialogLine;
+    NPCDialog npcManager;
 
+
+    void Start()
+    {
+        currentDialogLine = 0;
+    }
     public void checkInputContinueDialog()
     {
-        if(Input.GetKeyDown("joystick button 2") || Input.GetMouseButtonDown(1))
+        if(currentDialogLine >= dialogLines.Length)
         {
-            dialogActive = false;
-            dialogBox.SetActive(false);
-        }
+            Debug.Log("Cumplo");
+
+            if(Input.GetKeyDown("joystick button 2") || Input.GetMouseButtonDown(1))
+            {
+                dialogActive = false;
+                dialogBox.SetActive(false);
+                currentDialogLine = 0;
+            }
+        }    
     }
-    public void ShowDialog(string textDialog)
+    public void ShowDialog(string[] dialogs)
     {
-        dialogText.text = textDialog;
+        dialogLines = dialogs;
+        dialogText.text = dialogs[currentDialogLine];
+        currentDialogLine++;
     }
 }
