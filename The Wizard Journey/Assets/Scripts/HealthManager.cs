@@ -17,9 +17,13 @@ public class HealthManager : MonoBehaviour
 
     private SpriteRenderer characterRenderer;
 
+    
+    private SFXManager managerSFX; 
+
     // Start is called before the first frame update
     void Start()
     {
+        managerSFX = FindObjectOfType<SFXManager>();
         currentHealth = maxHealth;
         characterRenderer = GetComponent<SpriteRenderer>();
     }
@@ -39,7 +43,10 @@ public class HealthManager : MonoBehaviour
             if(gameObject.tag.Equals("Enemy"))
             {
                 GameObject.Find("Wizard").GetComponent<CharacterStats>().AddExperience(expWhenDefeted);
+                managerSFX.demonDead.Play();
             }
+            if(gameObject.tag.Equals("Player"))
+                managerSFX.playerDead.Play();
         }
     }
     public void CalculateDamage(int damage)

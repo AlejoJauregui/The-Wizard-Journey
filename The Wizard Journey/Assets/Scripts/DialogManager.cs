@@ -42,4 +42,12 @@ public class DialogManager : MonoBehaviour
         dialogText.text = dialogs[currentDialogLine];
         currentDialogLine++;
     }
+    
+    public void ShowQuestDialog(string [] dialogs)
+    {
+        dialogLines = dialogs;
+        playerController.playerIsTalking = true;
+        dialogText.text = dialogs[currentDialogLine];
+        currentDialogLine++;
+    }
 }

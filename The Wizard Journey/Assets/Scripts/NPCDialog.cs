@@ -8,6 +8,7 @@ public class NPCDialog : MonoBehaviour
     private DialogManager manager;
     public bool playerIsInTheZone;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -58,4 +59,6 @@ public class NPCDialog : MonoBehaviour
             manager.checkInputContinueDialog(); 
         }
     }
+
+    
 }

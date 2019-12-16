@@ -150,6 +150,7 @@ MonoBehaviour:
   lastMovement: {x: 0, y: 0}
   nextPlaceName: 
   attackTime: 1
+  playerIsTalking: 0
 --- !u!50 &872228051470827810
 Rigidbody2D:
   serializedVersion: 4

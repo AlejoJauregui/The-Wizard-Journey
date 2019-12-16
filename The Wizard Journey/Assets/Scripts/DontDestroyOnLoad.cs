@@ -11,6 +11,9 @@ public class DontDestroyOnLoad : MonoBehaviour
         IsCameraCreated();
         checkPlayerLoad();
         CheckUIManagerCreator();
+        //CheckSFXManagerCreator();
+        //CheckAudioManagerCreator();
+        CheckAudioVolumeManagerCreator();
     }
 
     void checkPlayerLoad()
@@ -23,6 +26,27 @@ public class DontDestroyOnLoad : MonoBehaviour
     void CheckUIManagerCreator()
     {
         if(!UIManager.uiManagerCreated)
+            DontDestroyOnLoad(this.transform.gameObject);
+        else
+            Destroy(gameObject);
+    }
+    /*void CheckSFXManagerCreator()
+    {
+        if(!SFXManager.audioManagerCreated)
+            DontDestroyOnLoad(this.transform.gameObject);
+        else
+            Destroy(gameObject);     
+    }
+    void CheckAudioManagerCreator()
+    {
+        if(!AudioManager.audioManagerCreated)
+            DontDestroyOnLoad(this.transform.gameObject);
+        else
+            Destroy(gameObject);
+    }*/
+    void CheckAudioVolumeManagerCreator()
+    {
+        if(!AudioVolumeManager.audioVolumeManagerCreated)
             DontDestroyOnLoad(this.transform.gameObject);
         else
             Destroy(gameObject);

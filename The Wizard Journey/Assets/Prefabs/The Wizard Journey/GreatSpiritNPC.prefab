@@ -176,6 +176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1.5
   isWalking: 0
+  isTalking: 0
   walkTime: 1.5
   waitTime: 0.5
   movementZone: {fileID: 0}
