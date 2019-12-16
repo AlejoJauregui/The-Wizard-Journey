@@ -104,10 +104,10 @@ namespace DuloGames.UI
 		/// </summary>
 		/// <returns><c>true</c> if this instance is highlighted the specified eventData; otherwise, <c>false</c>.</returns>
 		/// <param name="eventData">Event data.</param>
-		new public bool IsHighlighted(BaseEventData eventData)
+		/*new public bool IsHighlighted(BaseEventData eventData)
 		{
-			return base.IsHighlighted();
-		}
+			return base.IsHighlighted(eventData);
+		}*/
 		
 		/// <summary>
 		/// Raises the pointer up event.

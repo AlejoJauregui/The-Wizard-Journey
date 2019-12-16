@@ -477,15 +477,15 @@ namespace DuloGames.UI
 			{
 				UISelectField_List list = this.m_ListObject.GetComponent<UISelectField_List>();
 				
-				if (list.IsHighlighted(eventData))
-					return;
+				/*if (list.IsHighlighted(eventData))
+					return;*/
 			}
 			
 			// Check if the mouse is over one of our options
 			foreach (UISelectField_Option option in this.m_OptionObjects)
 			{
-				if (option.IsHighlighted(eventData))
-					return;
+				/*if (option.IsHighlighted(eventData))
+					return;*/
 			}
 			
 			// When the select field loses focus
