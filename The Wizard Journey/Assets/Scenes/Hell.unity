@@ -245,7 +245,7 @@ PrefabInstance:
     - target: {fileID: 5975319360103100458, guid: cc16793646d9f0342b98a3855cb2b4c6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5975319360103100458, guid: cc16793646d9f0342b98a3855cb2b4c6,
         type: 3}
@@ -475,6 +475,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3791460113810819051, guid: 2c6528adc8d2994489da3ef6060bafa8,
         type: 3}
+      propertyPath: dialogs.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791460113810819051, guid: 2c6528adc8d2994489da3ef6060bafa8,
+        type: 3}
       propertyPath: dialogs.Array.data[0]
       value: "Aaron, ac\xE1 habita el Esp\xEDritu Oscuro, ten cuidado, es muy poderoso."
       objectReference: {fileID: 0}
@@ -487,6 +492,11 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogs.Array.data[2]
       value: "Ten mucho cuidado, mi peque\xF1o aprendiz."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791460113810819051, guid: 2c6528adc8d2994489da3ef6060bafa8,
+        type: 3}
+      propertyPath: dialogs.Array.data[3]
+      value: "\xA1Este ser\xE1 el fin de ese malvado!"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c6528adc8d2994489da3ef6060bafa8, type: 3}
@@ -870,7 +880,7 @@ PrefabInstance:
     - target: {fileID: 3572686530879486375, guid: d4c591e0a902fc84da643c67d1308db7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3572686530879486375, guid: d4c591e0a902fc84da643c67d1308db7,
         type: 3}
@@ -21668,7 +21678,7 @@ PrefabInstance:
     - target: {fileID: 5975319360103100458, guid: cc16793646d9f0342b98a3855cb2b4c6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5975319360103100458, guid: cc16793646d9f0342b98a3855cb2b4c6,
         type: 3}

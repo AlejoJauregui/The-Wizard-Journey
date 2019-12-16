@@ -32582,6 +32582,18 @@ PrefabInstance:
       propertyPath: movementZone
       value: 
       objectReference: {fileID: 273921975}
+    - target: {fileID: 3791460113810819051, guid: 2c6528adc8d2994489da3ef6060bafa8,
+        type: 3}
+      propertyPath: dialogs.Array.data[1]
+      value: "Te ayudar\xE9 a rescatar a tu hija de las malvadas manos del Oscuro
+        Esp\uFCE9\xEDritu."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791460113810819051, guid: 2c6528adc8d2994489da3ef6060bafa8,
+        type: 3}
+      propertyPath: dialogs.Array.data[2]
+      value: "Una parte de mi viajar\xE1 contigo y te dar\xE1 fuerza para destru\uFCA0ir
+        a los esbirros de ese ser. "
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c6528adc8d2994489da3ef6060bafa8, type: 3}
 --- !u!1001 &4568965633926826148

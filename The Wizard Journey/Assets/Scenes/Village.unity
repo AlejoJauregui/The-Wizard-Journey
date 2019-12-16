@@ -12431,6 +12431,95 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 644626942}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &709023114
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3791460114101714073, guid: 2c6528adc8d2994489da3ef6060bafa8,
+        type: 3}
+      propertyPath: m_Name
+      value: GreatSpiritNPC (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791460114101714077, guid: 2c6528adc8d2994489da3ef6060bafa8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 25.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791460114101714077, guid: 2c6528adc8d2994489da3ef6060bafa8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791460114101714077, guid: 2c6528adc8d2994489da3ef6060bafa8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791460114101714077, guid: 2c6528adc8d2994489da3ef6060bafa8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791460114101714077, guid: 2c6528adc8d2994489da3ef6060bafa8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791460114101714077, guid: 2c6528adc8d2994489da3ef6060bafa8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791460114101714077, guid: 2c6528adc8d2994489da3ef6060bafa8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791460114101714077, guid: 2c6528adc8d2994489da3ef6060bafa8,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791460114101714077, guid: 2c6528adc8d2994489da3ef6060bafa8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791460114101714077, guid: 2c6528adc8d2994489da3ef6060bafa8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791460114101714077, guid: 2c6528adc8d2994489da3ef6060bafa8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791460114101714072, guid: 2c6528adc8d2994489da3ef6060bafa8,
+        type: 3}
+      propertyPath: movementZone
+      value: 
+      objectReference: {fileID: 1718372400}
+    - target: {fileID: 3791460113810819051, guid: 2c6528adc8d2994489da3ef6060bafa8,
+        type: 3}
+      propertyPath: dialogs.Array.data[0]
+      value: Has destruido a todos los esbirros que estaban en la aldea Aaron.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791460113810819051, guid: 2c6528adc8d2994489da3ef6060bafa8,
+        type: 3}
+      propertyPath: dialogs.Array.data[1]
+      value: "A\xFAn no lo has logrado por completo, la prueba final est\xE1 cerca."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791460113810819051, guid: 2c6528adc8d2994489da3ef6060bafa8,
+        type: 3}
+      propertyPath: dialogs.Array.data[2]
+      value: "Se valiente mi peque\xF1o aprendiz."
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c6528adc8d2994489da3ef6060bafa8, type: 3}
 --- !u!1001 &827726729
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12516,8 +12605,8 @@ PrefabInstance:
     - target: {fileID: 3791460113810819051, guid: 2c6528adc8d2994489da3ef6060bafa8,
         type: 3}
       propertyPath: dialogs.Array.data[2]
-      value: "Debes destruirlos para ser m\xE1s fuerte y puedas enfrentarte al Esp\xEDritu
-        Oscuro. "
+      value: "Debes destruirlos para ser m\xE1s fuerte y puedas enfrentarte a el.
+        Recuerda, entre m\xE1s esbirros destruyas, m\xE1s fuerte te har\xE1s."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c6528adc8d2994489da3ef6060bafa8, type: 3}
@@ -27667,6 +27756,81 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 58.808895, y: 1}
   m_EdgeRadius: 0
+--- !u!1001 &1718372399
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3712499828501102829, guid: e01bfbdd8ed1d9d46bdfc73ad74ff80a,
+        type: 3}
+      propertyPath: m_Name
+      value: GreatSpiritZone (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712499828501102819, guid: e01bfbdd8ed1d9d46bdfc73ad74ff80a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 27.422293
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712499828501102819, guid: e01bfbdd8ed1d9d46bdfc73ad74ff80a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.1469827
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712499828501102819, guid: e01bfbdd8ed1d9d46bdfc73ad74ff80a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.2966797
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712499828501102819, guid: e01bfbdd8ed1d9d46bdfc73ad74ff80a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712499828501102819, guid: e01bfbdd8ed1d9d46bdfc73ad74ff80a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712499828501102819, guid: e01bfbdd8ed1d9d46bdfc73ad74ff80a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712499828501102819, guid: e01bfbdd8ed1d9d46bdfc73ad74ff80a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712499828501102819, guid: e01bfbdd8ed1d9d46bdfc73ad74ff80a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712499828501102819, guid: e01bfbdd8ed1d9d46bdfc73ad74ff80a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712499828501102819, guid: e01bfbdd8ed1d9d46bdfc73ad74ff80a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712499828501102819, guid: e01bfbdd8ed1d9d46bdfc73ad74ff80a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e01bfbdd8ed1d9d46bdfc73ad74ff80a, type: 3}
+--- !u!61 &1718372400 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 3712499828501102828, guid: e01bfbdd8ed1d9d46bdfc73ad74ff80a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1718372399}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1917565551
 PrefabInstance:
   m_ObjectHideFlags: 0
