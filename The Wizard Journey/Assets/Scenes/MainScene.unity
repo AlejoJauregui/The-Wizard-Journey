@@ -31932,7 +31932,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e609a7a755b3e7b4098880e40dc1fccc, type: 3}
+  m_audioClip: {fileID: 8300000, guid: bdb52bae5664eaf47846f576908b496f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -32044,7 +32044,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e85b60c0ff38a1d4f8fc9a649029f60d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultAudioLevel: 0.5
+  defaultAudioLevel: 0.7
 --- !u!4 &1943199134 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3712499828501102819, guid: e01bfbdd8ed1d9d46bdfc73ad74ff80a,
@@ -32118,7 +32118,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c5cbd7503cd8ba441943d7e615e23cbe, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6aad1bfc57ab0f6489698b90b8ff829d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -32865,6 +32865,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 8215142612043126052, guid: ca0796dc3c38d9d41a75591c0d9985e4,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8215142612043126052, guid: ca0796dc3c38d9d41a75591c0d9985e4,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8215142612043126052, guid: ca0796dc3c38d9d41a75591c0d9985e4,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8215142612043126235, guid: ca0796dc3c38d9d41a75591c0d9985e4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -32930,20 +32945,5 @@ PrefabInstance:
       propertyPath: theCamera
       value: 
       objectReference: {fileID: 1561171860}
-    - target: {fileID: 8215142612043126052, guid: ca0796dc3c38d9d41a75591c0d9985e4,
-        type: 3}
-      propertyPath: m_BackGroundColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8215142612043126052, guid: ca0796dc3c38d9d41a75591c0d9985e4,
-        type: 3}
-      propertyPath: m_BackGroundColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8215142612043126052, guid: ca0796dc3c38d9d41a75591c0d9985e4,
-        type: 3}
-      propertyPath: m_BackGroundColor.b
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca0796dc3c38d9d41a75591c0d9985e4, type: 3}
